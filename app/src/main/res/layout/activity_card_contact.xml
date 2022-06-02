@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/txtNomeFromCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Natan Souza"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtTelefoneFromCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Telefone : (16) 993225-0228"
+                android:textSize="16sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtEnderecoFromCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End: Carlos Del Nero, 292"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txtEmailFromCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email : natansouza@gmail.com"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/btnUpdate"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alterar" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EXCLUIR"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

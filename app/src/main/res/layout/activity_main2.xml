@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.slidingpanelayout.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_pane_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <!-- The first child view becomes the left pane. When the combined
+         desired width (expressed using android:layout_width) would
+         not fit on-screen at once, the right pane is permitted to
+         overlap the left. -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/frameCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+
+    <!-- The second child becomes the right (content) pane. In this
+         example, android:layout_weight is used to expand this detail pane
+         to consume leftover available space when the
+         the entire window is wide enough to fit both the left and right pane.-->
+
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+    <!--        android:id="@+id/detail_container"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#ff333333"-->
+    <!--        android:name="com.example.SelectAnItemFragment" />-->
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>
